@@ -1,1 +1,1 @@
-https://doc-0g-5c-docs.googleusercontent.com/docs/securesc/jt128ede1fsktvt18r2bq5htk0k5dl2o/6gfhrmnujus0d4c516khg5dt085v1mt8/1577692800000/09162708554382807022/09162708554382807022/17mQQOjizvnqJwwy5kvrq7zqwtxn3lpL7?e=download&authuser=0&nonce=uppqbn88vh2ee&user=09162708554382807022&hash=c418amhfjfrj
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=17mQQOjizvnqJwwy5kvrq7zqwtxn3lpL7' -O ipusnas_summary.sql
