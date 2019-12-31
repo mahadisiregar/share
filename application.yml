@@ -1,0 +1,33 @@
+spring:
+   thymeleaf:
+      cache: false
+      mode: LEGACYHTML5
+   jpa:
+      database: mysql
+      show-sql: true
+      generate-ddl: false
+      hibernate: 
+      ddl-auto: none
+
+jwt:
+   # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
+   base64-secret: ZDkxMzFiYjViZTU2YTAwMTQyNDdhMDA2YTUzMTM4NmQyMmIwMzZhMWFlY2IzN2U3NzlhZGRmNmQyYzNkNjU1ZWUxZjg5N2ZmZjg1N2JkMGNlMDQ4Y2Q4NDJjMzIxZTYwNDJjODMwYWYxMmQyMGVjNGMyZDZlN2ViYWUwMzBmOTM=
+   # Token is valid 24 hours
+   token-validity-in-seconds: 86400
+   token-validity-in-seconds-for-remember-me: 2592000
+
+multitenancy: 
+  mtapp: 
+    dataSources: 
+      -
+         tenantId: test 
+         url: jdbc:mysql://178.128.106.42:3306/ipusnas_summary?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta 
+         username: root
+         password: "@ks@r@m4y4"
+         driverClassName: com.mysql.cj.jdbc.Driver
+      - 
+         tenantId: api-ipusnas-dashboard 
+         url: jdbc:mysql://178.128.106.42:3306/ipusnas_summary?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta 
+         username: root
+         password: "@ks@r@m4y4"
+         driverClassName: com.mysql.cj.jdbc.Driver
