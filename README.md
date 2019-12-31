@@ -1,1 +1,1 @@
-wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1A4hOKO4oIcDRpH9oMeK2dOQFUGBKcfWs' -O ipusnas-dashboard-1.0.jar
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1A4hOKO4oIcDRpH9oMeK2dOQFUGBKcfWs' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1A4hOKO4oIcDRpH9oMeK2dOQFUGBKcfWs" -O ipusnas-dashboard-1.0.jar && rm -rf /tmp/cookies.txt
