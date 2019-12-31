@@ -21,13 +21,13 @@ multitenancy:
     dataSources: 
       -
          tenantId: test 
-         url: jdbc:mysql://178.128.106.42:3306/ipusnas_summary?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta 
-         username: root
-         password: "@ks@r@m4y4"
+         url: jdbc:mysql://localhost:3306/ipusnas_summary?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta 
+         username: ipusnas-dashboard
+         password: "iPusnasDashboard@2019"
          driverClassName: com.mysql.cj.jdbc.Driver
       - 
          tenantId: api-ipusnas-dashboard 
-         url: jdbc:mysql://178.128.106.42:3306/ipusnas_summary?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta 
-         username: root
-         password: "@ks@r@m4y4"
+         url: jdbc:mysql://localhost:3306/ipusnas_summary?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta 
+         username: ipusnas-dashboard
+         password: "iPusnasDashboard@2019"
          driverClassName: com.mysql.cj.jdbc.Driver
