@@ -1,0 +1,4 @@
+cd  /home/ipusnas/ipusnas_dashboard
+docker image build -t ipusnas-dashboard:latest .
+docker container run -p 8016:8080 -d --name ipusnasdashboard1 ipusnas-dashboard
+docker container logs -f ipusnasdashboard1
