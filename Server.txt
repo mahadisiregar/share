@@ -1,0 +1,15 @@
+  server {
+        listen 80;
+
+        # iLibrary yang sudah kerjasama
+        server_name ipusnas-dashboard.aksaramaya.id;
+
+        root         /usr/share/nginx/html/premium_ilibrary_dashboard;
+
+        location / {
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+    }
