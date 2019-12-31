@@ -1,3 +1,7 @@
+docker stop ipusnasdashboard1
+docker rm ipusnasdashboard1
+docker image rm ipusnas-dashboard
+
 cd  /home/ipusnas/ipusnas_dashboard
 docker image build -t ipusnas-dashboard:latest .
 docker container run -p 8016:8080 -d --name ipusnasdashboard1 ipusnas-dashboard
